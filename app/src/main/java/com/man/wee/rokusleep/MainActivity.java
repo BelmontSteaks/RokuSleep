@@ -59,7 +59,7 @@ public class MainActivity extends ActionBarActivity {
         clientSocket.send(sendPacket);
 
         status("Waiting for network response...");
-		/* recieve response and store in our receivePacket */
+		/* receive response and store in our receivePacket */
         DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);
         clientSocket.receive(receivePacket);
 
